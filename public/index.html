@@ -1,18 +1,15 @@
 <html>
 <head>
   <base href="/">
-  <title>Watson Assistant Chat App</title>
+  <title>immobot.4</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:image" content="conversation.svg" />
-  <meta property="og:title" content="Conversation Chat Simple" />
-  <meta property="og:description" content="Sample application that shows how to use the Watson Assistant API to identify user intents" />
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-  <div id="view-change-button" class="button" onclick="PayloadPanel.togglePanel(event, this)">
+  <div id="view-change-button" class="button" onclick="PayloadPanel.togglePanel(event, this)" style="display:none;">
     <img class="option full" src="../img/Chat Button.png">
     <img class="option not-full" src="../img/Code Button.png">
   </div>
@@ -22,19 +19,12 @@
         <div id="scrollingChat"></div>
         <p class="user-typing" id="user-typing-field"></p>
         <label for="textInput" class="inputOutline">
-          <input id="textInput" class="input responsive-column" placeholder="Type something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)"
+          <input id="textInput" class="input responsive-column" placeholder="Ihre Nachricht" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)"
             autofocus>
         </label>
-        <div class="disclaimer">
-          * This system is for demonstration purposes only and is not intended to process Personal Data. No Personal
-          Data is to be entered
-          into this system as it may not have the necessary controls in place to meet the requirements of the General
-          Data Protection
-          Regulation (EU) 2016/679.
-        </div>
       </div>
     </div>
-    <div id="payload-column" class="fixed-column content-column">
+    <div id="payload-column" class="fixed-column content-column" style="display:none;">
       <div id="payload-initial-message">
         Type something to see the output
       </div>

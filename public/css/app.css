@@ -83,7 +83,7 @@ div {
 
 .user-typing {
   border: none;
-  color: #8d25e8;
+  color: #ff8200;
   margin: 0.75rem;
   font-size: 15;
   font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -131,7 +131,7 @@ div {
   color: #fff;
   letter-spacing: 0.015rem;
   line-height: 1.3125rem;
-  background: #00B4A0;
+  background: #19262c;
   border-radius: 1.25rem;
   border-bottom-right-radius: 0;
   text-align: left;
@@ -191,8 +191,8 @@ div {
 
 .from-watson.latest.top p:before {
   content: ".";
-  color: #9855D4;
-  background-image: url("../img/marker_image.png");
+  color: #ff8200;
+  background-color: #ff8200;
   background-size: 0.3125rem 1.3125rem;
   position: absolute;
   z-index: 2;
@@ -445,13 +445,13 @@ html{
 }
 
 .options-list {
-  color: #8d25e8;
+  color: #ff8200;
   cursor: pointer;
 }
 
 .options-button {
   color: white;
-  background-color: #8d25e8;
+  background-color: #ff8200;
   border-radius: 6px;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -461,3 +461,22 @@ html{
   cursor: pointer;
   display: inline-block;
 }
+
+.message-inner > p > ul,
+.message-inner > p > li{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+.message-inner li > .options-list{
+  border:1px solid #ff8200;
+  padding:2px;
+  border-radius:10px;
+  margin:10px 0;
+  text-align:center;
+}
+.message-inner li > .options-list:hover{
+  background-color:#ff8200;
+  color:white;
+}
+
